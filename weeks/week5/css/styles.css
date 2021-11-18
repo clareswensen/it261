@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: beige;
+}
+
+form {
+  width: 400px;
+  margin: 30px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  padding: 8px;
+  border: 2px solid red;
+}
+
+form ul {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.error {
+  display: block;
+  color: red;
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 3px;
+}
+
+select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+input[type="submit"] {
+  padding: 5px;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.box {
+  width: 400px;
+  margin: 10px auto;
+  padding: 8px;
+  border: 2px solid green;
+}
