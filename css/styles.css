@@ -1,0 +1,113 @@
+/* styles for my portal page */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  overflow: hidden;
+  background-color: black;
+}
+
+nav {
+  margin-left: 70px;
+  height: 75px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  float: left;
+}
+
+nav li {
+  float: left;
+  list-style-type: none;
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#wrapper {
+  max-width: 1100px;
+  margin: 1em auto;
+}
+
+/* our valuses are based on a 940px grid 580 divided by 940 */
+main {
+  width: 70%;
+  background-color: b;
+  float: left;
+  margin-bottom: 1em;
+  padding-right: 2em;
+}
+img {
+  max-width: 100%;
+  display: block;
+  
+}
+#profilePic {
+  width: 50%;
+  float: left;
+  padding: 1em 1em .5em 1em;
+}
+p {
+  margin-bottom: 1.5em;
+}
+#name {
+  margin-top: .5em;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.screenshot {
+  width: 100%;
+  float: left;
+  padding: 1em;
+}
+
+aside {
+  width: 30%;
+  float: right;
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px black solid;
+}
+
+.homeworkWeeks {
+  margin-left: 20px;
+}
+
+.exerciseList {
+  margin-left: 60px;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px dotted black;
+  clear: both;
+  background-color: darkcyan;
+}
+footer ul {
+  float: right;
+}
+
+footer li {
+  float: left;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+footer a {
+  color: black;
+}
