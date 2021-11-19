@@ -31,5 +31,5 @@ include('includes/header.php'); ?>
     </aside>
 
     <?php
-    include('includes/footer.php'); ?>
+    include('includes/footer.php'); 
    

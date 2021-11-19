@@ -12,7 +12,7 @@
 
     <header>
         <div class="header-inner" >
-            <a href="index.">
+            <a href="index.php">
             <img id="logo" src="images/webLogo.jpg" alt="logo">
             </a> 
        <nav>
@@ -24,3 +24,4 @@
        </nav>
        </div> <!--end header inner-->
     </header>
+    

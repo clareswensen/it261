@@ -80,7 +80,7 @@ if(isset($_GET['today'])){
 switch($today) {
 
 case 'Sunday' :
-    $color = '<body style="background-color: whitesmoke">';
+    $color = '<body style="background-color: whitesmoke"></body>';
     $mushroom = '<h2>Sunday is Shaggy Mane Day</h2>';
     $pic = 'shaggyMane.jpg';
     $alt = 'Shaggy Mane';
@@ -88,7 +88,7 @@ case 'Sunday' :
     break;
 
 case 'Monday' :
-    $color = '<body style="background-color: darkbrown">';
+    $color = '<body style="background-color: darkbrown"></body>';
     $mushroom = '<h2>Monday is Morel Day!</h2>';
     $pic = 'morel.jpg';
     $alt = 'Morel';
@@ -96,7 +96,7 @@ case 'Monday' :
     break;
 
 case 'Tuesday' :
-    $color = '<body style="background-color: goldenrod">';
+    $color = '<body style="background-color: goldenrod"></body>';
     $mushroom = '<h2>Tuesday is Chanterelle Day</h2>';
     $pic = 'chanterelle.jpg';
     $alt = 'Chaneterelle';
@@ -104,7 +104,7 @@ case 'Tuesday' :
     break;
 
 case 'Wednesday' :
-    $color = '<body style="background-color: tan">';
+    $color = '<body style="background-color: tan"></body>';
     $mushroom = '<h2>Wednesday is Chicken of the Woods Day</h2>';
     $pic = 'chickenofthewoods.jpg';
     $alt = 'Chicken of the Woods';
@@ -112,7 +112,7 @@ case 'Wednesday' :
     break;
 
 case 'Thursday' :
-    $color = '<body style="background-color: orange">';
+    $color = '<body style="background-color: orange"></body>';
     $mushroom = '<h2>Thursday is Hedgehog Day</h2>';
     $pic = 'hedgehog.jpg';
     $alt = 'Hedgehog';
@@ -120,7 +120,7 @@ case 'Thursday' :
     break;
 
 case 'Friday' :
-    $color = '<body style="background-color: lightskyblue">';
+    $color = '<body style="background-color: lightskyblue"></body>';
     $mushroom = '<h2>Friday is Lobster Day</h2>';
     $pic = 'lobster.jpg';
     $alt = 'Lobster';
@@ -128,7 +128,7 @@ case 'Friday' :
     break;
 
 case 'Saturday' :
-    $color = '<body style="background-color: burlywood">';
+    $color = '<body style="background-color: burlywood"></body>';
     $mushroom = '<h2>Saturday is Cauliflower Day</h2>';
     $pic = 'cauliflower.jpg';
     $alt = 'Cauliflower';
@@ -289,3 +289,26 @@ function random_pics($photos){
 
 ?>
 
+<?php //config file for gallery.php
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
+}
+
+
+?>
