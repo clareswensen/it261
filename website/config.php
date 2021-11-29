@@ -1,11 +1,16 @@
 <?php
 
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
+$nav['mushrooms.php'] = 'Mushrooms';
 $nav['contact.php'] = 'Contact';
 $nav['gallery.php'] = 'Gallery';
 
@@ -42,10 +47,16 @@ switch(THIS_PAGE) {
     $headline = 'Welcome to my Daily Page';
     break;
 
-    case 'project.php':
+    case 'mushrooms.php':
     $title = 'Project page of our IT 261 Website';
-    $body = 'project inner';
-    $headline = 'Welcome to our Project page of our IT 261 Website';
+    $body = 'mushroom inner';
+    $headline = 'Welcome to my Mushroom page of of our IT 261 Website';
+    break;
+
+    case 'mushroom-view.php':
+    $title = 'Project view page of our IT 261 Website';
+    $body = 'mushroom-view inner';
+    $headline = 'Welcome to my Mushroom view page of of our IT 261 Website';
     break;
 
     case 'contact.php':
@@ -56,14 +67,14 @@ switch(THIS_PAGE) {
 
     case 'gallery.php':
     $title = 'Gallery page of our IT 261 Website';
-    $body = 'gallery';
+    $body = 'gallery inner';
     $headline = 'Welcome to our Gallery page of our IT 261 Website';
     break;
 
     case 'thx.php':
         $title = 'Thank you page of our form on contact page of our IT 261 Website';
         $body = 'thanks';
-        $headline = 'Thank you page page of our IT 261 Website';
+        $headline = 'Thank you page of our IT 261 Website';
         break;
 }
 
@@ -92,7 +103,7 @@ case 'Monday' :
     $mushroom = '<h2>Monday is Morel Day!</h2>';
     $pic = 'morel.jpg';
     $alt = 'Morel';
-    $description = '<p>The morel is found on the ground in many habitats: woods, fruit orchards, gardens, sandy soil, wood chips, landscaped areas, etc. It appears in the spring. A good place to check is under cottonwood and alder along streams</p>';
+    $description = '<p>The morel is found on the ground in many habitats: woods, fruit orchards, gardens, sandy soil, wood chips, landscaped areas, etc. It appears in the spring. A good place to check is under cottonwood and alder along streams. Morels exhibit a pyrophilic behaviour and may grow abundantly in forests which have been recently burned by a fire. </p>';
     break;
 
 case 'Tuesday' :
@@ -247,7 +258,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['comments'],
         $_POST['privacy']
     )){
-        $to = ' szemeo@mystudentswa.com';
+        $to = 'clareswensen@gmail.com';
         $subject = 'Test email' .date('m/d/y') ;
         $body = '
         The first name is: '.$first_name.''.PHP_EOL.'
@@ -289,11 +300,7 @@ function random_pics($photos){
 
 ?>
 
-<?php //config file for gallery.php
-ob_start();  // prevents header errors before reading the whole page!
-define('DEBUG', 'TRUE');  // We want to see our errors
-
-include('credentials.php');
+<?php //config file for mushroom.php
 
 function myError($myFile, $myLine, $errorMsg)
 {

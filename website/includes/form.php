@@ -9,7 +9,7 @@
         <span class="error"><?php echo $last_name_Err;?></span>
 
         <label for="email">Email</label>
-        <input type="email" name="email"value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
+        <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
         <span class="error"><?php echo $email_Err;?></span>
 
         <label for="phone">Phone Number</label>
@@ -37,7 +37,7 @@
 
         <label for="uses">Primary Use for mushrooms:</label>
         <select name="uses">
-        <option value=""NULL <?php if(isset($_POST['uses']) && $_POST['uses'] == NULL) echo 'selected="unselected"';?>>Select One!</option>
+        <option value="" <?php if(isset($_POST['uses']) && $_POST['uses'] == NULL) echo 'selected="unselected"';?>>Select One!</option>
         <option value="medicinal" <?php if(isset($_POST['uses']) && $_POST['uses'] == 'medicinal') echo 'selected="unselected"';?>>Medicinal</option>
         <option value="culinary" <?php if(isset($_POST['uses']) && $_POST['uses'] == 'culinary') echo 'selected="unselected"';?>>Culinary</option>
         <option value="recreational" <?php if(isset($_POST['uses']) && $_POST['uses'] == 'recreational') echo 'selected="unselected"';?>>Recreational</option>

@@ -65,12 +65,16 @@ img {
   max-width: 100%;
   display: block;
 }
-
+.screenshot {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid black;
+}
 
 p {
   padding-bottom: 2em;
 }
-.gallery_heading {
+.gallery_heading, .mushroom_heading {
   margin-left: 20px;
 }
 
@@ -86,20 +90,6 @@ main {
 }
 .gallery_heading {
   margin-bottom: 20px;
-}
-table {
-  width: 1200px;
-  margin-left: 20px;
-}
-td {
-  width: 300px;
-  padding: 10px;
-}
-.mushroom_name {
-  font-size: 30px;
-  font-weight: bold;
-  width: 200px;
-  text-align: center;
 }
 aside {
   width: 36.17%;
@@ -118,10 +108,15 @@ footer {
   background-color: darkgrey;
 }
 
-footer li {
-  float: left;
+footer ul {
   list-style-type: none;
-  margin-left: 2em;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+footer li {
+  display: inline;
+  padding: 20px;
 }
 /* form styles */
 
@@ -150,3 +145,50 @@ fieldset {
   margin-top: 5px;
   font-style: italic;
 }
+/* Styles for the gallery page */
+.gallery table {
+  width: 1200px;
+  margin: 0 auto;
+}
+.gallery td {
+  width: 300px;
+  font-size: 25px;
+}
+
+/* Styles for mushroom.php and mushroom-view.php */
+
+td {
+  padding: 10px;
+}
+.mushroom_table {
+  width: 1100px;
+}
+.mushroom_heading {
+  margin: 30px;
+}
+
+.mushroom_name {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+.mushroom_common_name {
+  font-size: 30px;
+  font-weight: bold;
+  width: 200px;
+  text-align: left;
+}
+.more_info {
+  text-align: right;
+  
+}
+.mushroom_view {
+  margin-left: 30px;
+}
+.mushroom_view_aside {
+  width: 36.17%;
+  margin-top: 30px;
+  float: right;
+}
+
+
