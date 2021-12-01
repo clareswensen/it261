@@ -1,0 +1,90 @@
+/* styles for my week 9 class exercise */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: bisque;
+}
+
+header {
+    background: lightseagreen;
+    height: 200px;
+}
+
+.success {
+    float: left;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.welcome-logout {
+    float: right;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+#wrapper {
+    clear: both;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* form styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.block {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+.error {
+    margin: 10px 0;
+    color: red;
+    font-style: italic;
+}
+footer {
+    margin-top: 100px;
+}
+footer ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer li {
+    display: inline;
+    padding: 20px;
+}
